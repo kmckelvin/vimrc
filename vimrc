@@ -17,7 +17,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
 Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
@@ -105,15 +104,15 @@ nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 let g:nerdtree_tabs_open_on_console_startup = 1
 let NERDTreeShowHidden=1
 
-" CtrlP
-let g:ctrlp_custom_ignore = 'node_modules'
-
 " Go
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 
 command! W w
 command! Wa wall
+
+" find files
+nmap <silent> <c-p> :FZF<CR>
 
 " navigate panes with <c-hhkl>
 nmap <silent> <c-k> :wincmd k<CR>
