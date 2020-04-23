@@ -53,6 +53,17 @@ set wildmenu
 set wildmode=longest,list
 set mouse=a
 set lazyredraw
+set laststatus=2
+
+set statusline=
+set statusline+=%{FugitiveStatusline()}
+set statusline+=\ %f
+set statusline+=%m
+set statusline+=%=
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
 
 " line highlighting
 set cursorline
