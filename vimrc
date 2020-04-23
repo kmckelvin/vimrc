@@ -69,11 +69,15 @@ set statusline+=\ %l:%c
 " line highlighting
 set cursorline
 hi CursorLine term=bold cterm=bold ctermbg=233
+
+" colorscheme
 syntax on
 colorscheme onedark
 
+" indentation and whitespace
 autocmd BufNewFile,BufReadPost * set ai ts=2 sw=2 sts=2 et
-autocmd BufWritePre * %s/\s\+$//e
+autocmd BufNewFile,BufReadPost *.go setlocal ts=4 noet sw=4 sts=4
+autocmd BufWritePre * %s/\s\+$//e " truncate trailing whitespace
 
 " language server configuration
 let g:LanguageClient_serverCommands = {
@@ -92,16 +96,21 @@ let g:LanguageClient_rootMarkers = {
     \ 'typescriptreact': ['tsconfig.json'],
     \ }
 
-let g:nerdtree_tabs_open_on_console_startup = 1
-let NERDTreeShowHidden=1
-
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
+" NERDTree
+let g:nerdtree_tabs_open_on_console_startup = 1
+let NERDTreeShowHidden=1
+
+" CtrlP
+let g:ctrlp_custom_ignore = 'node_modules'
+
+" Go
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 command! W w
 command! Wa wall
