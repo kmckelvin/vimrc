@@ -3,7 +3,6 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" On-demand loading
 Plug 'scrooloose/nerdtree'
 
 Plug 'autozimu/LanguageClient-neovim', {
