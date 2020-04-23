@@ -72,6 +72,7 @@ syntax on
 colorscheme onedark
 
 autocmd BufNewFile,BufReadPost * set ai ts=2 sw=2 sts=2 et
+autocmd BufWritePre * %s/\s\+$//e
 
 " language server configuration
 let g:LanguageClient_serverCommands = {
