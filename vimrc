@@ -121,11 +121,13 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+nnoremap <esc><esc> :noh<CR>
+
 map <leader>ft :NERDTreeToggle<CR>
 map <leader>ff :NERDTreeFind<CR>
 map <leader>fs :w<CR>
 
-map <leader>gs :Gstatus<CR>
+map <leader>gs :Git<CR>
 map <leader>gc :Gcommit<CR>
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
