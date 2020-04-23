@@ -54,6 +54,7 @@ set wildmode=longest,list
 set mouse=a
 set lazyredraw
 set laststatus=2
+set showmatch
 
 set statusline=
 set statusline+=%{FugitiveStatusline()}
