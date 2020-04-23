@@ -65,6 +65,7 @@ autocmd BufNewFile,BufReadPost * set ai ts=2 sw=2 sts=2 et
 " language server configuration
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'javascriptreact': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
     \ 'typescriptreact': ['javascript-typescript-stdio'],
     \ 'ruby': ['solargraph', 'stdio'],
