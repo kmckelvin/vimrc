@@ -118,6 +118,9 @@ let g:go_info_mode='gopls'
 command! W w
 command! Wa wall
 
+command! Q q
+command! Qa qall
+
 " find files
 nmap <silent> <c-p> :FZF<CR>
 
