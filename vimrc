@@ -29,6 +29,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
 Plug 'janko/vim-test'
 Plug 'preservim/nerdcommenter'
+Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
