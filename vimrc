@@ -108,7 +108,6 @@ nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 " NERDTree
-let g:nerdtree_tabs_open_on_console_startup = 1
 let NERDTreeShowHidden=1
 
 " Go
