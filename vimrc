@@ -28,6 +28,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
 Plug 'janko/vim-test'
+Plug 'preservim/nerdcommenter'
 
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
