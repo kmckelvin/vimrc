@@ -10,8 +10,8 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 
-" (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'tpope/vim-surround'
