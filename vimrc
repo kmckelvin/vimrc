@@ -22,6 +22,7 @@ Plug 'jwhitley/vim-matchit'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'preservim/nerdcommenter'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'scrooloose/nerdtree'
@@ -98,6 +99,9 @@ let g:LanguageClient_rootMarkers = {
     \ 'typescript': ['tsconfig.json'],
     \ 'typescriptreact': ['tsconfig.json'],
     \ }
+
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
