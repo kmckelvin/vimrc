@@ -87,7 +87,7 @@ autocmd BufWritePre * %s/\s\+$//e " truncate trailing whitespace
 autocmd BufEnter * call FollowNERDTree()
 
 function! FollowNERDTree()
-  if (&modifiable && g:NERDTree.IsOpen() && expand('%')[0:9] != "NERD_tree_")
+  if (&modifiable && g:NERDTree.IsOpen() && expand('%')[0:9] != "NERD_tree_" && expand('%:t') != "COMMIT_EDITMSG")
     NERDTreeFind
     wincmd p
   endif
