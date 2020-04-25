@@ -83,6 +83,16 @@ autocmd BufNewFile,BufReadPost * set ai ts=2 sw=2 sts=2 et
 autocmd BufNewFile,BufReadPost *.go setlocal ts=4 noet sw=4 sts=4
 autocmd BufWritePre * %s/\s\+$//e " truncate trailing whitespace
 
+" follow the active file in NERDTree
+autocmd BufEnter * call FollowNERDTree()
+
+function! FollowNERDTree()
+  if (&modifiable && g:NERDTree.IsOpen() && expand('%')[0:9] != "NERD_tree_")
+    NERDTreeFind
+    wincmd p
+  endif
+endfunction
+
 " language server configuration
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['javascript-typescript-stdio'],
