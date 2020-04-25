@@ -9,31 +9,26 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree'
-
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-
+Plug 'Shougo/deoplete.nvim'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+Plug 'fatih/vim-go'
+Plug 'janko/vim-test'
+Plug 'jiangmiao/auto-pairs'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-
+Plug 'jwhitley/vim-matchit'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'fatih/vim-go'
-Plug 'jiangmiao/auto-pairs'
-Plug 'sheerun/vim-polyglot'
-Plug 'joshdick/onedark.vim'
-Plug 'janko/vim-test'
-Plug 'preservim/nerdcommenter'
 Plug 'michaeljsmith/vim-indent-object'
-
-Plug 'Shougo/deoplete.nvim'
+Plug 'preservim/nerdcommenter'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 
 let g:deoplete#enable_at_startup = 1
 " Initialize plugin system
