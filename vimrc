@@ -11,7 +11,6 @@ call plug#begin('~/.vim/plugged')
 
 "Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'fatih/vim-go'
 Plug 'janko/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
