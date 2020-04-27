@@ -14,7 +14,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go'
 Plug 'janko/vim-test'
 Plug 'jiangmiao/auto-pairs'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
