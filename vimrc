@@ -9,8 +9,7 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-"Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'fatih/vim-go'
 Plug 'janko/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
@@ -19,10 +18,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'jwhitley/vim-matchit'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-endwise'
