@@ -205,8 +205,8 @@ map <leader>fs :w<CR>
 map <leader>gs :Git<CR>
 map <leader>gc :Gcommit<CR>
 
-" test execution
-let test#strategy = "vimterminal"
+" vim-test execution
+let test#strategy = "neovim"
 
 nmap <silent> <leader>tn :TestNearest<CR>
 nmap <silent> <leader>tf :TestFile<CR>
