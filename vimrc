@@ -73,7 +73,7 @@ set statusline+=\ %l:%c
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
-set cmdheight=2
+set cmdheight=1
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
