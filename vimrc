@@ -177,6 +177,7 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_types = 1
 
+" embrace it, don't fight it
 command! W w
 command! Wa wall
 
