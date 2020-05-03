@@ -9,7 +9,10 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+Plug 'SirVer/ultisnips'
+Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go'
+Plug 'honza/vim-snippets'
 Plug 'janko/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
@@ -64,7 +67,6 @@ set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-
 
 " BEGIN intellisense config
 
@@ -196,6 +198,10 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+
+" navigate tabs
+nmap <leader>t] :tabnext<CR>
+nmap <leader>t[ :tabprevious<CR>
 
 nnoremap <esc><esc> :noh<CR>
 
