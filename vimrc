@@ -9,8 +9,6 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-Plug 'SirVer/ultisnips'
-Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go'
 Plug 'honza/vim-snippets'
 Plug 'janko/vim-test'
@@ -29,6 +27,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+Plug 'sirver/ultisnips'
 
 " Initialize plugin system
 call plug#end()
