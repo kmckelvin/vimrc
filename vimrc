@@ -57,6 +57,8 @@ set mouse=a
 set lazyredraw
 set laststatus=2
 set showmatch
+set splitright
+set splitbelow
 
 set statusline=
 set statusline+=%{FugitiveStatusline()}
@@ -182,6 +184,9 @@ let g:go_highlight_types = 1
 " embrace it, don't fight it
 command! W w
 command! Wa wall
+
+command! Wq wq
+command! Wqa wqall
 
 command! Q q
 command! Qa qall
