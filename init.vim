@@ -1,13 +1,7 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-  !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'fatih/vim-go'
 Plug 'honza/vim-snippets'
@@ -34,8 +28,8 @@ Plug 'sirver/ultisnips'
 call plug#end()
 
 let mapleader=" "
-map <leader>vs :source ~/.vimrc<CR>
-map <leader>vi :tabe ~/.vimrc<CR>
+map <leader>vs :source ~/code/vimrc/init.vim<CR>
+map <leader>vi :tabe ~/code/vimrc/init.vim<CR>
 
 set hidden
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
