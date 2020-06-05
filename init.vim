@@ -134,6 +134,12 @@ augroup end
 
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ca  <Plug>(coc-codeaction)
+xmap <leader>ca  <Plug>(coc-codeaction-selected)
+" Apply AutoFix to problem on the current line.
+nmap <leader>cf  <Plug>(coc-fix-current)
+
 " END intellisense config
 
 " line highlighting
