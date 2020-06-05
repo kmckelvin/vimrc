@@ -15,7 +15,6 @@ Plug 'jwhitley/vim-matchit'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'sirver/ultisnips'
@@ -166,8 +165,10 @@ function! FollowNERDTree()
   endif
 endfunction
 
-let g:prettier#autoformat = 1
-let g:prettier#autoformat_require_pragma = 0
+" let g:prettier#autoformat = 1
+" let g:prettier#autoformat_require_pragma = 0
+
+let test#javascript#ava#file_pattern = '.ava.ts'
 
 " NERDTree
 let NERDTreeShowHidden=1
