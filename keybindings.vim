@@ -1,12 +1,8 @@
-" embrace it, don't fight it
-command! W w
-command! Wa wall
+let mapleader=" "
 
-command! Wq wq
-command! Wqa wqall
-
-command! Q q
-command! Qa qall
+" manage vimrc
+map <leader>vs :source ~/code/vimrc/init.vim<CR>
+map <leader>vi :tabe ~/code/vimrc/init.vim<CR>
 
 " find files
 nmap <silent> <c-p> :FZF<CR>
@@ -51,10 +47,9 @@ nmap <silent> <leader>tg :TestVisit<CR>
 xmap <leader>fm  <Plug>(coc-format-selected)
 nmap <leader>fm  <Plug>(coc-format-selected)
 
-" Remap keys for applying codeAction to the current buffer.
+" code actions
 nmap <leader>ca  <Plug>(coc-codeaction)
 xmap <leader>ca  <Plug>(coc-codeaction-selected)
 " Apply AutoFix to problem on the current line.
 nmap <leader>cf  <Plug>(coc-fix-current)
-
 nmap <leader>rn <Plug>(coc-rename)

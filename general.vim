@@ -1,7 +1,3 @@
-let mapleader=" "
-map <leader>vs :source ~/code/vimrc/init.vim<CR>
-map <leader>vi :tabe ~/code/vimrc/init.vim<CR>
-
 set hidden
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set incsearch
@@ -51,6 +47,16 @@ autocmd BufWritePre * %s/\s\+$//e " truncate trailing whitespace
 
 " follow the active file in NERDTree
 autocmd BufEnter * call FollowNERDTree()
+
+" embrace it, don't fight it
+command! W w
+command! Wa wall
+
+command! Wq wq
+command! Wqa wqall
+
+command! Q q
+command! Qa qall
 
 function! FollowNERDTree()
   if (&modifiable && g:NERDTree.IsOpen() && expand('%:p')[0] == "/" && expand('%')[0:9] != "NERD_tree_" && expand('%:t') != "COMMIT_EDITMSG")
