@@ -1,4 +1,4 @@
-let test#javascript#ava#file_pattern = '.ava.ts'
+let test#javascript#ava#file_pattern = '\v.*\.ava\.(t|j)s(x?)$'
 
 " NERDTree
 let NERDTreeShowHidden=1
