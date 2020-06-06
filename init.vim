@@ -218,6 +218,9 @@ map <leader>fs :w<CR>
 map <leader>gs :Git<CR>
 map <leader>gc :Gcommit<CR>
 
+nmap <leader>sc :NERDTreeClose<CR>:mksession!<CR>:qa!<CR>
+nmap <leader>sl :source Session.vim<CR>:silent exec "!rm Session.vim"<CR>
+
 " vim-test execution
 let test#strategy = "neovim"
 
