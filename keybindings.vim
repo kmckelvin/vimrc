@@ -52,9 +52,12 @@ nmap <leader>fm  <Plug>(coc-format-selected)
 " code actions
 nmap <leader>ca  <Plug>(coc-codeaction)
 xmap <leader>ca  <Plug>(coc-codeaction-selected)
+
 " Apply AutoFix to problem on the current line.
 nmap <leader>cf  <Plug>(coc-fix-current)
 nmap <leader>rn <Plug>(coc-rename)
+
+nmap <leader>gr <Plug>(coc-references)
 
 " project wide search for current word
 nmap <leader>fi :Rg <c-r>=expand("<cword>")<cr>
