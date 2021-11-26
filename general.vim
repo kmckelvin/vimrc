@@ -31,13 +31,14 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 
-" line highlighting
-set cursorline
-hi CursorLine term=bold cterm=bold ctermbg=233
-
 " colorscheme
 syntax on
 colorscheme onedark
+
+" line highlighting
+set cursorline
+" hi CursorLine term=bold cterm=bold ctermbg=233
+hi LineNr ctermfg=grey
 
 " indentation and whitespace
 autocmd BufNewFile,BufReadPost * set ai ts=2 sw=2 sts=2 et
