@@ -32,7 +32,7 @@ map <leader>fs :w<CR>
 
 " git
 map <leader>gs :Git<CR>
-map <leader>gc :Gcommit<CR>
+map <leader>gc :Git commit<CR>
 
 " sessions
 nmap <leader>sc :NERDTreeClose<CR>:mksession!<CR>:qa!<CR>
