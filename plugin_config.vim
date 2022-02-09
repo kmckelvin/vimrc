@@ -14,3 +14,6 @@ let g:go_highlight_types = 1
 
 " vim-test execution
 let test#strategy = "neovim"
+
+" Blamer
+let g:blamer_delay = 60
