@@ -59,6 +59,8 @@ command! Wqa wqall
 command! Q q
 command! Qa qall
 
+command! UPDATE PlugUpdate | PlugUpgrade | CocUpdate
+
 function! FollowNERDTree()
   if (&modifiable && g:NERDTree.IsOpen() && expand('%:p')[0] == "/" && expand('%')[0:9] != "NERD_tree_" && expand('%:t') != "COMMIT_EDITMSG")
     NERDTreeFind
