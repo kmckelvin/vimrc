@@ -38,7 +38,7 @@ colorscheme onedark
 " line highlighting
 set cursorline
 " hi CursorLine term=bold cterm=bold ctermbg=233
-hi LineNr ctermfg=grey
+hi LineNr guifg=lightblue
 
 " indentation and whitespace
 autocmd BufNewFile,BufReadPost * set ai ts=2 sw=2 sts=2 et
