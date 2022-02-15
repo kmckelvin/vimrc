@@ -37,7 +37,6 @@ colorscheme onedark
 
 " line highlighting
 set cursorline
-" hi CursorLine term=bold cterm=bold ctermbg=233
 hi LineNr guifg=lightblue
 
 " indentation and whitespace
