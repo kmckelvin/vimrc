@@ -31,13 +31,7 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 
-" colorscheme
 syntax on
-colorscheme onedark
-
-" line highlighting
-set cursorline
-hi LineNr guifg=lightblue
 
 " indentation and whitespace
 autocmd BufNewFile,BufReadPost * set ai ts=2 sw=2 sts=2 et
@@ -82,6 +76,3 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-
-hi CursorLine guibg=#222222
-hi Normal guibg=#111111
