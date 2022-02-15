@@ -83,3 +83,6 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
+
+hi CursorLine guibg=#222222
+hi Normal guibg=#111111
