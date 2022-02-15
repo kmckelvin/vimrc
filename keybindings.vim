@@ -23,7 +23,7 @@ nmap <silent> <c-l> :wincmd l<CR>
 nmap <leader>t] :tabnext<CR>
 nmap <leader>t[ :tabprevious<CR>
 
-nnoremap <esc><esc> :noh<CR>
+nnoremap <leader><leader> :noh<CR>
 
 " files
 map <leader>ft :NERDTreeToggle<CR>
