@@ -6,7 +6,6 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'APZelos/blamer.nvim'
 Plug 'fatih/vim-go'
 Plug 'honza/vim-snippets'
-Plug 'janko/vim-test'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
@@ -21,6 +20,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'vim-test/vim-test'
 
 " Initialize plugin system
 call plug#end()
