@@ -11,8 +11,6 @@ nmap <silent> <c-p> :FZF<CR>
 nmap k gk
 nmap j gj
 
-nmap Q :q<CR>
-
 " navigate panes with <c-hhkl>
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
