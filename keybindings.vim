@@ -21,16 +21,16 @@ nmap <silent> <c-l> :wincmd l<CR>
 nmap <leader>t] :tabnext<CR>
 nmap <leader>t[ :tabprevious<CR>
 
-nnoremap <leader><leader> :noh<CR>
+nnoremap <silent> <leader><leader> :noh<CR>
 
 " files
-map <leader>ft :NERDTreeToggle<CR>
-map <leader>ff :NERDTreeFind<CR>
-map <leader>fs :w<CR>
+map <silent> <leader>ft :NERDTreeToggle<CR>
+map <silent> <leader>ff :NERDTreeFind<CR>
+map <silent> <leader>fs :w<CR>
 
 " git
-map <leader>gs :Git<CR>
-map <leader>gc :Git commit<CR>
+map <silent> <leader>gs :Git<CR>
+map <silent> <leader>gc :Git commit<CR>
 
 " sessions
 nmap <leader>sc :NERDTreeClose<CR>:mksession!<CR>:qa!<CR>
@@ -44,15 +44,15 @@ nmap <silent> <leader>tl :TestLast<CR>
 nmap <silent> <leader>tg :TestVisit<CR>
 
 " Formatting selected code.
-xmap <leader>fm  <Plug>(coc-format-selected)
-nmap <leader>fm  <Plug>(coc-format-selected)
+xmap <leader>fm <Plug>(coc-format-selected)
+nmap <leader>fm <Plug>(coc-format-selected)
 
 " code actions
-nmap <leader>ca  <Plug>(coc-codeaction)
-xmap <leader>ca  <Plug>(coc-codeaction-selected)
+nmap <leader>ca <Plug>(coc-codeaction)
+xmap <leader>ca <Plug>(coc-codeaction-selected)
 
 " Apply AutoFix to problem on the current line.
-nmap <leader>cf  <Plug>(coc-fix-current)
+nmap <leader>cf <Plug>(coc-fix-current)
 nmap <leader>rn <Plug>(coc-rename)
 
 nmap <leader>gr <Plug>(coc-references)
