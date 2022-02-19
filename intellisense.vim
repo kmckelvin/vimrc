@@ -62,5 +62,11 @@ augroup end
 
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+let g:endwise_no_mappings = 1
+
+augroup vimrc-ruby-settings
+  autocmd!
+  autocmd FileType ruby imap <expr> <CR> pumvisible() ? "\<C-Y>\<Plug>DiscretionaryEnd" : "\<CR>\<Plug>DiscretionaryEnd"
+augroup END
