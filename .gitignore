@@ -2,3 +2,4 @@
 plugged/
 autoload/plug.vim
 extensions/
+!/extensions/package.json
