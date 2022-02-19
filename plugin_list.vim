@@ -10,6 +10,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'jwhitley/vim-matchit'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

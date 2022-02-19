@@ -16,4 +16,10 @@ let g:go_highlight_types = 1
 let test#strategy = "neovim"
 
 " Blamer
+let g:blamer_enabled = 1
 let g:blamer_delay = 60
+
+" indent line
+let g:indent_blankline_char = "▏"
+
+
