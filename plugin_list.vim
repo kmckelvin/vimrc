@@ -4,7 +4,7 @@
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'APZelos/blamer.nvim'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'honza/vim-snippets'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf'
@@ -20,6 +20,7 @@ Plug 'sirver/ultisnips'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'vim-test/vim-test'
 
