@@ -23,13 +23,10 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
-" position. Coc only does snippet and additional edit on confirm.
-"if exists('*complete_info')
-  "inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-"else
-  "imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-"endif
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -64,9 +61,4 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-let g:endwise_no_mappings = 1
-
-augroup vimrc-ruby-settings
-  autocmd!
-  autocmd FileType ruby imap <expr> <CR> pumvisible() ? "\<C-Y>\<Plug>DiscretionaryEnd" : "\<CR>\<Plug>DiscretionaryEnd"
-augroup END
+" let g:endwise_no_mappings = 1
