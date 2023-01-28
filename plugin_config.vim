@@ -17,7 +17,7 @@ let test#strategy = "neovim"
 
 " Blamer
 let g:blamer_enabled = 1
-let g:blamer_delay = 60
+let g:blamer_delay = 500
 
 " indent line
 let g:indent_blankline_char = "▏"
