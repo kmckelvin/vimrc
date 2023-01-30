@@ -59,3 +59,4 @@ nmap <leader>gr <Plug>(coc-references)
 
 " project wide search for current word
 nmap <leader>fi :Rg <c-r>=expand("<cword>")<cr>
+nmap Q :q<cr>
