@@ -1,20 +1,10 @@
 {
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextCurrentLineOnly": false,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "graphql",
-    "html",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "jsonc",
-    "less",
-    "markdown",
-    "scss",
-    "typescript",
-    "typescriptreact",
-    "vue",
-    "yaml"
-  ]
+  "[css][graphql][html][json][jsonc][less][markdown][scss][vue]": {
+    "coc.preferences.formatOnSave": true
+  },
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "coc.preferences.formatOnSave": true
+  }
 }
