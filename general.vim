@@ -76,3 +76,8 @@ if (has("termguicolors"))
 endif
 
 command Frt :normal gg O# frozen_string_literal: true<ESC>jO<ESC><C-o>
+
+" ripgrep
+if executable("rg")
+  set grepprg=rg\ --vimgrep
+endif
