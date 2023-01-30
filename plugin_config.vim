@@ -21,5 +21,3 @@ let g:blamer_delay = 500
 
 " indent line
 let g:indent_blankline_char = "▏"
-
-
