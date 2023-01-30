@@ -37,6 +37,7 @@ autocmd BufNewFile,BufReadPost * set ai ts=2 sw=2 sts=2 et
 autocmd BufNewFile,BufReadPost *.go setlocal ts=4 noet sw=4 sts=4
 autocmd BufEnter *.md setlocal wrap linebreak
 autocmd BufWritePre * %s/\s\+$//e " truncate trailing whitespace
+autocmd BufWritePre * %s,\($\n\s*\)\+\%$,,e " truncate EOF whitespace
 
 " follow the active file in NERDTree
 autocmd BufEnter * call FollowNERDTree()
