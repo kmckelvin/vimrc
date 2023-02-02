@@ -24,7 +24,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'vim-test/vim-test'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Initialize plugin system
 call plug#end()
-
